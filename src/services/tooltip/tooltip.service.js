@@ -8,7 +8,7 @@ module.exports = function (app) {
     Model: createModel(app),
     paginate: app.get('paginate')
   };
-
+  console.log("SIt");
   // Initialize our service with any options it requires
   app.use('/tooltip', new Tooltip(options, app));
 
